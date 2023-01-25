@@ -1,5 +1,7 @@
 import { Bot, InputFile } from 'grammy'
 
+import dotenv from 'dotenv'
+dotenv.config()
 const bot = new Bot(process.env.BOTTOKEN || '')
 
 import { Configuration, OpenAIApi } from 'openai'
